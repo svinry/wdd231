@@ -1,0 +1,35 @@
+@media (min-width: 768px) {
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav-panel {
+        position: static;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+        width: 100vw;
+        height: var(--nav-bar-height);
+        padding: .7rem clamp(1rem, 5vw, 4rem);
+        transform: none;
+        visibility: visible;
+        background-color: var(--color-text-primary);
+    }
+
+    .grid-container {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .about-me {
+        grid-column: 1 / 2;
+    }
+
+    .student-photo {
+        grid-column: 2 / -1;
+    }
+
+    .courses {
+        grid-column: 1 / -1;
+    }
+}

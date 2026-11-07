@@ -4,8 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD231 - Web Frontend Development</title>
+    <meta name="description" content="WDD231 - Web Frontend Development Course Homepage.">
+    <meta name="author" content="S. Alvin  Svinurai.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles-large.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <meta property="og:title" content="WDD231 - Web Frontend Development">
+    <meta property="og:description" content="WDD231 - Web Frontend Development Course Homepage.">
+    <meta property="og:image" content="https://svinry.github.io/wdd231/images/logo.svg">
+    <meta property="og:url" content="https://svinry.github.io/wdd231/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="keywords" content="WDD231, Web Development, Frontend Development, HTML, CSS, JavaScript, Alvin Svinurai">
 </head>
 <body>
-    WDD231 - Alvin
+    <div class="page-layout">
+        <header class="site-header">
+            <div class="header-container">
+                <div class="brand">
+                    <img src="images/logo.svg" width="69" height="61" alt="Alvin Svinurai Logo" class="site-logo">
+                    <span class="site-name">Alvin Svinurai<span>Frontend Development</span></span>
+                </div>
+                <button class="menu-toggle" id="nav-button" aria-label="Open Navigation Menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+            <nav class="navigation">
+                <div class="nav-panel">
+                    <a href="index.html" class="nav-link active">Home</a>
+                    <a href="chamber-project.html" class="nav-link">Chamber Project</a>
+                    <a href="final-project.html" class="nav-link">Final Project</a>
+                </div>
+            </nav>            
+        </header>
+        <main class="grid-container">
+            <h1 class="page-title">Home</h1>
+            <section class="about-me">
+                <h2 class="section-heading">About Me</h2>
+                <p>
+                My name is Alvin. I am Zimbabwean.
+                I currently work in data processing and analysis. 
+                I have a passion for web development and design. 
+                I am excited to utilize my knowledge and skills 
+                to create dynamic and interactive web applications.
+                </p>
+            </section>
+            <section class="student-photo">
+                <h2 class="section-heading">Student Photo</h2>
+                <div>
+                    <img src="images/profile.jpg" width="125" height="63" alt="Alvin Svinurai Photo">
+                </div>
+            </section>
+            <section class="courses">
+                <h2 class="section-heading">Web Certificate Courses</h2>
+                <div class="filter-buttons">
+                    <button class="filter-button active" data-filter="all" aria-pressed="true">All Courses</button>
+                    <button class="filter-button" data-filter="WDD" aria-pressed="false">WDD Courses</button>
+                    <button class="filter-button" data-filter="CSE" aria-pressed="false">CSE Courses</button>
+                </div>
+                <p class="course-credits" id="course-credits" aria-live="polite"></p>
+                <div class="course-list"></div>
+            </section>
+        </main>
+        <footer>
+            <div class="links-container">
+                <ul class="social-links">
+                    <li><a href="https://www.linkedin.com/in/alvin-svinurai-31250a183" target="_blank"><img src="images/linkedin-icon.png" height="45" width="45" alt="LinkedIn"></a></li>
+                    <li><a href="https://github.com/svinry/wdd231" target="_blank"><img src="images/github-icon.png" height="45" width="45" alt="GitHub"></a></li>
+                    <li><a href="https://x.com" target="_blank"><img src="images/x-icon.png" height="45" width="45" alt="Twitter"></a></li>
+                </ul>
+            </div>
+            <p>&copy;<span id="currentYear"></span> - Alvin Svinurai - Zimbabwe</p>
+            <p id="lastModified"></p>
+        </footer>
+    </div>    
 </body>
 </html>

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Flame Base/Outer -->
+  <path d="M 50,15 
+           C 56,26 63,33 63,44 
+           C 63,55 56,60 50,60 
+           C 44,60 37,55 37,44 
+           C 37,33 44,26 50,15 Z" fill="#E65100" />
+
+  <!-- Flame Middle -->
+  <path d="M 50,25 
+           C 54,33 58,38 58,46 
+           C 58,54 54,57 50,57 
+           C 46,57 42,54 42,46 
+           C 42,38 46,33 50,25 Z" fill="#F57C00" />
+
+  <!-- Flame Inner Core -->
+  <path d="M 50,35 
+           C 52,40 54,43 54,48 
+           C 54,53 52,55 50,55 
+           C 48,55 46,53 46,48 
+           C 46,43 48,40 50,35 Z" fill="#FFB74D" />
+
+  <!-- Ground Shadow/Base -->
+  <ellipse cx="50" cy="77" rx="32" ry="3" fill="#3E2723" opacity="0.4" />
+
+  <!-- Bottom Horizontal Log -->
+  <g>
+    <rect x="25" y="68" width="50" height="8" rx="4" ry="4" fill="#5D4037" />
+    <!-- Log End (Right) -->
+    <ellipse cx="71" cy="72" rx="2" ry="4" fill="#4E342E" />
+    <ellipse cx="71" cy="72" rx="1" ry="2" fill="#3E2723" />
+    <!-- Log End (Left) -->
+    <ellipse cx="29" cy="72" rx="2" ry="4" fill="#4E342E" />
+  </g>
+
+  <!-- Left Angled Log -->
+  <g transform="rotate(22 50 63)">
+    <rect x="26" y="59" width="48" height="8" rx="4" ry="4" fill="#6D4C41" />
+    <!-- Log End (Left) -->
+    <ellipse cx="30" cy="63" rx="2" ry="4" fill="#4E342E" />
+    <ellipse cx="30" cy="63" rx="1" ry="2" fill="#3E2723" />
+  </g>
+
+  <!-- Right Angled Log -->
+  <g transform="rotate(-22 50 63)">
+    <rect x="26" y="59" width="48" height="8" rx="4" ry="4" fill="#795548" />
+    <!-- Log End (Right) -->
+    <ellipse cx="70" cy="63" rx="2" ry="4" fill="#4E342E" />
+    <ellipse cx="70" cy="63" rx="1" ry="2" fill="#3E2723" />
+  </g>
+</svg>
