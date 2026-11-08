@@ -118,10 +118,6 @@ body {
     visibility: hidden;
 }
 
-/* .nav-panel[hidden] {
-    display: none;
-} */
-
 .nav-panel.open {
     transform: translateX(0);
     visibility: visible;
@@ -131,6 +127,7 @@ body {
     font-family: var(--font);
     font-size: 1rem;
     font-weight: 600;
+    background-color: var(--color-text-primary);
     color: var(--color-accent1);
     text-decoration: none;
     padding: .5rem;
@@ -139,11 +136,7 @@ body {
     line-height: 1.5;
 }
 
-.nav-link.active {
-    background-color: rgb(from var(--color-text-secondary) r g b / 0.4);
-}
-
-.nav-link:hover {
+.nav-link.active, .nav-link:hover {
     background-color: rgb(from var(--color-text-secondary) r g b / 0.4);
     color: var(--color-bg-secondary);
 }
@@ -231,12 +224,7 @@ body {
     cursor: pointer;
 }
 
-.filter-button.active {
-    background-color: rgb(from var(--color-text-primary) r g b / 0.9);
-    color: var(--color-accent1);
-}
-
-.filter-button:hover {
+.filter-button.active, .filter-button:hover {
     background-color: var(--color-text-secondary);
     color: var(--color-bg-secondary);
 }
@@ -246,6 +234,7 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
     margin-top: 1rem;
+    padding: 0 0.5rem 0.5rem 0.5rem;
 }
 
 .course-item {
