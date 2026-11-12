@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory | Marondera Chamber of Commerce</title>
+    <meta name="author" content="S. Alvin Svinurai">
+    <meta name="description" content="List of all Marondera Chamber of Commerce members along with their contact information.">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles-small.css">
+    <link rel="stylesheet" href="styles/styles-large.css">
+    <script src="scripts/scripts.js" defer></script>
+    <meta property="og:title" content="Directory | Marondera Chamber of Commerce">
+    <meta property="og:description" content="List of all Marondera Chamber of Commerce members along with their contact information.">
+    <meta property="og:image" content="https://svinry.github.io/wdd231/images/">
+    <meta property="og:url" content="https://svinry.github.io/wdd231/directory.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="keywords" content="Marondera, Chamber of Commerce, Member, Business, Company, Directory">
+</head>
+<body>
+    <div class="page-layout">
+        <header class="site-header">
+            <div class="brand">
+                <img class="brand-logo" src="images/marondera-coat-of-arms.jpg" width="53" height="75" alt="brand logo">
+                <span class="brand-name">Marondera Chamber of Commerce</span>
+            </div>
+            <div class="navigation">
+                <nav class="menu">
+                        <a href="#" class="nav-link">Home</a>
+                        <a href="#" class="nav-link">Discover</a>
+                        <a href="directory.html" class="nav-link active">Directory</a>
+                        <a href="#" class="nav-link">Join</a>
+                </nav>
+                <button class="dark-mode-toggle"><img src="images/moon-eclipse.png" alt="Moon eclipse icon" aria-label="toggle dark mode"></button>
+                <button class="menu-toggle" id="menu-btn" aria-label="Open navigation menu." aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+
+        </header>
+        <main>
+            <h1 class="page-title">Directory</h1>
+            <div class="layout-selection">
+                <button class="layout-btn" type="button" data-view="grid" aria-pressed="false">Grid</button>
+                <button class="layout-btn" type="button" data-view="list" aria-pressed="false">List</button>
+            </div>
+            <div class="directory-list" data-view="list" aria-live="polite" aria-busy="true">
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="info">
+                <div class="contact-info">
+                    <span>Marondera Chamber of Commerce</span>
+                    <p>123 First Street</p>
+                    <p>Marondera, Zimbabwe</p>
+                    <p>info@marondercommerce.org</p>
+                    <p>+2421234567</p>
+                </div>
+                <div class="developer-info">
+                    <span>WDD231 Class Project</span>
+                    <span>S. Alvin Svinurai</span>
+                    <p>&copy;<span id="currentYear"></span> Marondera Chamber of Commerce</p>
+                </div>
+            </div>
+            <div class="links-container">
+                <ul class="social-links">
+                    <li><a href="https://www.youtube.com" target="_blank"><img src="images/youtube-icon.png" height="45" width="45" alt="LinkedIn"></a></li>
+                    <li><a href="https://linkedin.com/" target="_blank"><img src="images/linkedin-icon.png" height="45" width="45" alt="GitHub"></a></li>
+                    <li><a href="https://x.com" target="_blank"><img src="images/x-icon.png" height="45" width="45" alt="Twitter"></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
