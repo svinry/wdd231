@@ -93,7 +93,7 @@ const loadMembers = async () => {
     if (!directoryList) return
 
     try {
-        const response = await fetch("members.json")
+        const response = await fetch("data/members.json")
         if (!response.ok) {
             throw new Error(`Member data request failed with status ${response.status}.`)
         }
